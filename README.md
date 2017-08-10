@@ -1,2 +1,2 @@
 # Akridgetech
-Code for the website at akridgetech.com.
+Code for the website at [www.akridgetech.com](akridgetech.com).

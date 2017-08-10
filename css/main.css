@@ -1,0 +1,148 @@
+/* main.css - Stylesheets for pages on akridgetech.com */
+
+* {
+	margin: 0;
+}
+
+/* ==== Header Styles ==== */
+#mainHeader {
+	background-color: black;
+	color: white;
+	font-family: Arial, sans-serif;
+}
+
+#headerName {
+	font-size: 2.5rem;
+	text-align: center;
+	text-shadow: 2px 2px 5px #4f4f4f;
+	padding-top: 10px;
+}
+
+#headerTitle {
+	font-size: 1.25rem;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#headerLinks {
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+}
+
+.headerLink {
+	/* https://stackoverflow.com/a/33730677/2709212 */
+	display: inline-block;
+	text-align: center;
+	font-size: 1.5rem;
+	text-shadow: 1px 1px 5px #4f4f4f;
+	padding-bottom: 5px;
+	margin: 0 auto;
+	flex: 1;
+}
+
+.headerLink a {
+	text-decoration: none;
+	display: block;
+}
+
+.headerLink a:link {
+	color: #036FF0;
+}
+
+.headerLink a:hover {
+	color: #60A3F3;
+}
+
+.headerLink a:visited {
+	color: #4935F4;
+}
+
+/* ==== "About Me" Section Rules ==== */
+#aboutMe {
+	background-color: #090A3B;
+	height: 400px;
+	display: flex;
+	align-items: center;
+}
+
+#aboutMeText {
+	float: right;
+	color: white;
+	padding: 5px;
+	width: 60%;
+	font-family: Calibri, Optima, sans-serif;
+	font-size: 1.5rem;
+}
+
+#aboutMeImage {
+	min-width: 13.298%;
+	max-width: 100%;
+	height: 400px;
+	background-image: url('../img/meSample.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+/* ==== Footer Rules ==== */
+#mainFooter {
+	color: #cfcfcf;
+	font-family: 'Segoe UI', Helvetica, sans-serif;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	margin: 20px;
+}
+
+#copyrightInfo {
+	width: 80%;
+}
+
+#socialIcons {
+	width: 20%;
+}
+
+#mainFooter a {
+	text-decoration: none;
+	color: #6f6f6f;
+}
+
+#mainFooter a:hover {
+	color: #8f8f8f;
+}
+
+#mainFooter a:visited {
+	color: #6f6f6f;
+}
+
+/* ==== Global Media Queries ==== */
+@media screen and (min-width: 1024px) {
+	/* Most tablets and computers */
+	
+	/* ==== Header Styles ==== */
+	#mainHeader {
+		overflow: auto;
+		display: flex;
+		width: 100%;
+	}
+	
+	#headerInfo {
+		width: 50%;
+		padding-left: 30px;
+	}
+	
+	#headerName {
+		text-align: left;
+	}
+	
+	#headerTitle {
+		text-align: left;
+	}
+	
+	#headerLinks {
+		width: 50%;
+		margin: 0;
+		align-items: center;
+	}
+}
