@@ -25,7 +25,7 @@
 }
 
 #headerLinks {
-	width: 50%;
+	width: 55%;
 	margin: 0 auto;
 	display: flex;
 }
@@ -36,7 +36,6 @@
 	text-align: center;
 	font-size: 1.5rem;
 	text-shadow: 1px 1px 5px #4f4f4f;
-	padding-bottom: 5px;
 	margin: 0 auto;
 	flex: 1;
 }
@@ -61,7 +60,7 @@
 /* ==== "About Me" Section Rules ==== */
 #aboutMe {
 	background-color: #090A3B;
-	height: 400px;
+	min-height: 400px;
 	display: flex;
 	align-items: center;
 }
@@ -69,25 +68,92 @@
 #aboutMeText {
 	float: right;
 	color: white;
-	padding: 5px;
+	padding: 5px 5px 5px 25px;
 	width: 60%;
 	font-family: Calibri, Optima, sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 #aboutMeImage {
-	min-width: 13.298%;
-	max-width: 100%;
+	width: 346px;
 	height: 400px;
 	background-image: url('../img/meSample.jpg');
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
+/* ==== Section Rules ==== */
+.pageSection {
+	border-top: 2px solid #aaa;
+	margin: 5px 15px 0px 15px;
+}
+
+.sectionHeader {
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+	color: #606060;
+}
+
+.project-screenshot-right {
+	border-bottom: 2px solid #aaa;
+}
+
+.project-left-description h3 {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.25rem;
+	color: #404040;
+}
+
+.project-left-description {
+	font-family: Calibri, Optima, sans-serif;
+	font-size: 1.1rem;
+}
+
+.project-right-screenshot {
+	margin: 10px 0 20px 0;
+}
+
+.screenshot {
+	display: block;
+	margin: 0 auto;
+	box-shadow: 4px 4px 10px #222;
+	max-width: 100%;
+}
+
+.project-screenshot-left {
+	margin-top: 20px;
+}
+
+.project-right-description {
+	font-family: Calibri, Optima, sans-serif;
+	font-size: 1.1rem;
+}
+
+.project-right-description h3 {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.25rem;
+	color: #404040;
+}
+
+.project-left-screenshot {
+	margin: 10px 0 20px 0;
+}
+
+.project-link {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 4px;
+}
 
 /* ==== Footer Rules ==== */
 #mainFooter {
-	color: #cfcfcf;
+	color: #8f8f8f;
 	font-family: 'Segoe UI', Helvetica, sans-serif;
 	font-weight: bold;
 	display: flex;
@@ -105,11 +171,11 @@
 
 #mainFooter a {
 	text-decoration: none;
-	color: #6f6f6f;
+	color: #4f4f4f;
 }
 
 #mainFooter a:hover {
-	color: #8f8f8f;
+	color: #6f6f6f;
 }
 
 #mainFooter a:visited {
@@ -128,7 +194,7 @@
 	}
 	
 	#headerInfo {
-		width: 50%;
+		width: 70%;
 		padding-left: 30px;
 	}
 	
@@ -141,8 +207,72 @@
 	}
 	
 	#headerLinks {
-		width: 50%;
+		width: 30%;
 		margin: 0;
 		align-items: center;
+	}
+	
+	/* ==== About Me Styles ==== */
+	#aboutMeText {
+		font-size: 1.8rem;
+	}
+	
+	/* ==== Section Styles ==== */
+	.sectionHeader {
+		font-size: 2.25rem;
+	}
+	
+	.project-screenshot-right {
+		display: flex;
+		align-items: center;
+	}
+	
+	.project-left-description {
+		width: 40%;
+		margin-right: 10%;
+	}
+	
+	.project-left-description h3 {
+		font-size: 1.75rem;
+	}
+	
+	.project-left-description {
+		font-size: 1.3rem;
+	}
+	
+	.project-right-screenshot {
+		width: 50%;
+	}
+	
+	.project-screenshot-left {
+		display: flex;
+		align-items: center;
+	}
+	
+	.project-right-description {
+		width: 40%;
+		margin-left: 5%;
+	}
+	
+	.project-right-description {
+		font-size: 1.3rem;
+	}
+	
+	.project-right-description h3 {
+		font-size: 1.75rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	/* Really tiny devices */
+	
+	/* ==== Header Styles ==== */
+	#headerLinks {
+		width: 65%;
+	}
+	
+	/* ==== About Me Styles ==== */
+	#aboutMeText {
+		font-size: 1.025rem;
 	}
 }
