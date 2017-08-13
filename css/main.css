@@ -4,6 +4,12 @@
 	margin: 0;
 }
 
+pre {
+	display: inline;
+	font-size: 80%;
+	font-family: Consolas, 'Courier New', monospace;
+}
+
 /* ==== Header Styles ==== */
 #mainHeader {
 	background-color: black;
@@ -151,6 +157,68 @@
 	margin-top: 4px;
 }
 
+/* ==== Project Download Rules ==== */
+#downloadInfo {
+	width: 80%;
+	min-width: 410px;
+	padding: 15px;
+	margin: 20px auto 0 auto;
+	text-align: center;
+	background-color: #ccdfff;
+	font-family: Calibri, Optima, sans-serif;
+	font-size: 1.25rem;
+}
+
+.downloadLinks {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#downloadInfo li {
+	list-style-type: none;
+}
+
+a.button {
+	text-decoration: none;
+	padding: 10px 10px;
+	background-color: blue;
+	border-radius: 10px;
+	color: white;
+}
+
+/* ==== Project Latest Changelog Rules ==== */
+#latestChangelog {
+	visibility: hidden;
+	height: 0;
+}
+
+/* ==== Project Description Rules ==== */
+#description {
+	width: 90%;
+	margin: 5px auto 0 auto;
+	padding-top: 13px;
+	border-top: 2px solid #777;
+	font-family: Calibri, Optima, sans-serif;
+}
+
+#description h2 {
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+#description p {
+	margin-bottom: 5px;
+}
+
+#description img {
+	display: block;
+	margin: 0 auto;
+	box-shadow: 4px 4px 10px #222;
+	max-width: 100%;
+}
+
+/* ==== Project Full Changelog Rules ==== */
+
 /* ==== Footer Rules ==== */
 #mainFooter {
 	color: #8f8f8f;
@@ -228,8 +296,8 @@
 	}
 	
 	.project-left-description {
-		width: 40%;
-		margin-right: 10%;
+		width: 45%;
+		margin-right: 5%;
 	}
 	
 	.project-left-description h3 {
@@ -260,6 +328,32 @@
 	
 	.project-right-description h3 {
 		font-size: 1.75rem;
+	}
+	
+	/* ==== Project Latest Changelog Rules ==== */
+	#latestChangelog {
+		visibility: visible;
+		height: 100%;
+		width: 80%;
+		min-width: 410px;
+		padding: 15px;
+		margin: 0 auto;
+		background-color: #ffedcc;
+		font-family: Calibri, Optima, sans-serif;
+	}
+
+	#latestChangelog h3 {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	#latestChangelog h4 {
+		font-size: 1.25rem;
+		text-align: center;
+	}
+
+	#latestChangelog li {
+		font-size: 1.1rem;
 	}
 }
 
