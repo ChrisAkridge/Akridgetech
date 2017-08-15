@@ -217,7 +217,79 @@ a.button {
 	max-width: 100%;
 }
 
+/* ==== Project Screenshot View ==== */
+#screenshots {
+	margin: 20px auto 20px auto;
+	padding-top: 20px;
+	border-top: 2px solid #ccc;
+	width: 80%;
+}
+
+.screenshotContainer {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.screenshotHeader {
+	font-family: Calibri, Optima, sans-serif;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.screenshotContainer a {
+	width: 30%;
+	margin: 5px 5px;
+}
+
+.screenshotContainer img {
+	width: 100%;
+	box-shadow: 4px 4px 10px #222;
+}
+
 /* ==== Project Full Changelog Rules ==== */
+#changelogs {
+	margin-top: 25px;
+	height: 300px;
+	background-color: #ffecaf;
+	
+	/* https://stackoverflow.com/a/15377178/2709212 */
+	display: flex;
+	flex-direction: column;
+}
+
+.changelogHeader {
+	text-align: center;
+	font-family: Calibri, Optima, sans-serif;
+	font-size: 2rem;
+}
+
+#changelogContainer {
+	overflow-x: scroll;
+	display: flex;
+	flex-grow: 1;
+}
+
+.changelog {
+	max-width: 250px;
+	min-width: 250px;
+	overflow-y: scroll;
+	flex-grow: 1;
+}
+
+.versionHeader {
+	font-family: Calibri, Optima, sans-serif;
+	text-align: center;
+}
+
+.versionReleaseDate {
+	font-family: Calibri, Optima, sans-serif;
+	text-align: center;
+}
+
+.changelog li {
+	font-family: Calibri, Optima, sans-serif;
+}
 
 /* ==== Footer Rules ==== */
 #mainFooter {
