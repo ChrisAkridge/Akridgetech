@@ -1,5 +1,9 @@
 /* main.css - Stylesheets for pages on akridgetech.com */
 
+html, body {
+	
+}
+
 * {
 	margin: 0;
 }
@@ -31,7 +35,7 @@ pre {
 }
 
 #headerLinks {
-	width: 55%;
+	width: 95%;
 	margin: 0 auto;
 	display: flex;
 }
@@ -159,8 +163,8 @@ pre {
 
 /* ==== Project Download Rules ==== */
 #downloadInfo {
-	width: 80%;
-	min-width: 410px;
+	box-sizing: border-box;
+	width: 70%;
 	padding: 15px;
 	margin: 20px auto 0 auto;
 	text-align: center;
@@ -174,8 +178,17 @@ pre {
 	margin-bottom: 20px;
 }
 
+#downloadInfo ul {
+	padding-left: 5px;
+}
+
 #downloadInfo li {
 	list-style-type: none;
+	text-align: left;
+}
+
+#downloadInfo pre {
+	font-size: 0.75rem;
 }
 
 a.button {
@@ -190,6 +203,26 @@ a.button {
 #latestChangelog {
 	visibility: hidden;
 	height: 0;
+}
+
+/* ==== Project Other Links Rules ==== */
+#projectOtherLinks {
+	box-sizing: border-box;
+	width: 70%;
+	margin: 0 auto;
+	font-family: Calibri, Optima, sans-serif;
+	border: 1px solid black;
+}
+
+#projectOtherLinks h3 {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+#projectOtherLinks ul {
+	width: 40%;
+	margin: 0 auto;
+	font-size: 1.1rem;
 }
 
 /* ==== Project Description Rules ==== */
@@ -207,7 +240,8 @@ a.button {
 }
 
 #description p {
-	margin-bottom: 5px;
+	margin: 0px auto 5px auto;
+	max-width: 90%;
 }
 
 #description img {
@@ -247,48 +281,19 @@ a.button {
 	box-shadow: 4px 4px 10px #222;
 }
 
-/* ==== Project Full Changelog Rules ==== */
-#changelogs {
-	margin-top: 25px;
-	height: 300px;
-	background-color: #ffecaf;
-	
-	/* https://stackoverflow.com/a/15377178/2709212 */
-	display: flex;
-	flex-direction: column;
-}
-
-.changelogHeader {
-	text-align: center;
+/* ==== Old Versions Rules ==== */
+#oldVersions {
 	font-family: Calibri, Optima, sans-serif;
-	font-size: 2rem;
 }
 
-#changelogContainer {
-	overflow-x: scroll;
-	display: flex;
-	flex-grow: 1;
-}
-
-.changelog {
-	max-width: 250px;
-	min-width: 250px;
-	overflow-y: scroll;
-	flex-grow: 1;
-}
-
-.versionHeader {
-	font-family: Calibri, Optima, sans-serif;
+#oldVersions h2 {
 	text-align: center;
 }
 
-.versionReleaseDate {
-	font-family: Calibri, Optima, sans-serif;
-	text-align: center;
-}
-
-.changelog li {
-	font-family: Calibri, Optima, sans-serif;
+.oldVersion {
+	width: 75%;
+	margin: 0 auto;
+	font-size: 125%;
 }
 
 /* ==== Footer Rules ==== */
@@ -347,7 +352,7 @@ a.button {
 	}
 	
 	#headerLinks {
-		width: 30%;
+		width: 40%;
 		margin: 0;
 		align-items: center;
 	}
@@ -402,12 +407,19 @@ a.button {
 		font-size: 1.75rem;
 	}
 	
+	/* ==== Project Infobox Rules ==== */
+	.projectInfoBox {
+		width: 50%;
+		float: right;
+		margin-bottom: 20px;
+	}
+	
 	/* ==== Project Latest Changelog Rules ==== */
 	#latestChangelog {
 		visibility: visible;
+		box-sizing: border-box;
 		height: 100%;
-		width: 80%;
-		min-width: 410px;
+		width: 70%;
 		padding: 15px;
 		margin: 0 auto;
 		background-color: #ffedcc;
@@ -434,7 +446,7 @@ a.button {
 	
 	/* ==== Header Styles ==== */
 	#headerLinks {
-		width: 65%;
+		width: 85%;
 	}
 	
 	/* ==== About Me Styles ==== */
