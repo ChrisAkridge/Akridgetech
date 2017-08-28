@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Chris Akridge - Software Developer</title>
+		<title>Chris Akridge - Projects</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
@@ -15,6 +15,9 @@
 				
 				<div id="headerLinks">
 					<div class="headerLink">
+						<a href="index.html">Home</a>
+					</div>
+					<div class="headerLink">
 						<a href="projects.html">Projects</a>
 					</div>
 					<div class="headerLink">
@@ -27,25 +30,16 @@
 			</div>
 		</header>
 		
-		<section id="aboutMe">
-			<div id="aboutMeImage">
-			</div>
-			<div id="aboutMeText">
-				<h3>About Me:</h3>
-				<p>Hi, I'm Chris. I'm a C# developer in Louisville, Kentucky, and I'm interested in all kinds of things. I work on a number of personal projects ranging the gamut, from game engines to compilers to utilities to common libraries.
-
-I'm currently looking for a back-end C# in the Louisville area. If you're interested, please <a href="contact.html" class="linkHighContrast">shoot me an e-mail.</a></p>
-			</div>
+		<section id="projectPageHeader">
+			<h1>Personal Projects</h1>
 		</section>
 		
 		<section class="pageSection">
-			<div class="sectionHeader">
-				<p>Projects</p>
-			</div>
 			<div class="project-screenshot-right">
 				<div class="project-left-description">
 					<h3>ByteView</h3>
 					<p>Display any file, group of files, or folder as a bitmap image made from the raw bytes of the file. Save and load pictures, sort them and extract the unique colors. Export a series of images made from a group of files using the Large File Processor.</p>
+					<p class="projectDetails">Latest release: Version 1.0.0 (released August 11, 2017)</p>
 					<a class="project-link" href="projects/byteView.html">Details</a>
 				</div>
 				<div class="project-right-screenshot">
@@ -58,12 +52,24 @@ I'm currently looking for a back-end C# in the Louisville area. If you're intere
 				</div>
 				<div class="project-right-description">
 					<h3>IronArc</h3>
-					<p>IronArc is a virtual machine running a simple custom instruction set. The IronArc host will run multiple VMs and provide access to the machines using the Debugger. Attach virtual and physical hardware (terminals, I/O, and disk access). This is not meant for production or serious use - it is a learning exercise in low-level programming.</p>
-					<a class="project-link" href="#">Details</a>
+					<p><span class="inDevWarning">This project is pre-Alpha and is still in development. </span>IronArc is a virtual machine running a simple custom instruction set. The IronArc host will run multiple VMs and provide access to the machines using the Debugger. Attach virtual and physical hardware (terminals, I/O, and disk access). This is not meant for production or serious use - it is a learning exercise in low-level programming.</p>
+					<p class="projectDetails">Latest Update: Wiring up the GUI. Up Next: Reworking the spec to be simpler.</p>
+					<a class="project-link" href="projects/ironArc.html">Details</a>
 				</div>
 			</div>
-			<div class="project-page-link">
-				<a href="projects.html">See all projects...</a>
+			<div class="project-screenshot-right">
+				<div class="project-left-description">
+					<h3>Cix</h3>
+					<p><span class="inDevWarning">This project is pre-Alpha and is still in development. </span>Cix (pronounced "six") is a compiler project for a simple C-like language. Its primary use will be to produce programs for the IronArc platform.</p>
+					<p class="projectDetails">Latest Update: First stages of AST generation (structure definitons and function headers) are in progress.</p>
+					<a class="project-link" href="projects/cix.html">Details</a>
+				</div>
+				<div class="project-right-screenshot">
+					<img class="screenshot" src="img/scr_Cix.png">
+				</div>
+			</div>
+			<div class="project-coming-soon">
+				Coming soon...
 			</div>
 		</section>
 		
@@ -77,5 +83,6 @@ I'm currently looking for a back-end C# in the Louisville area. If you're intere
 				</div>
 			</div>
 		</footer>
+	</body>
 	</body>
 </html>

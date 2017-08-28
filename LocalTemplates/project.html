@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{TITLE} - {SHORTDESC}</title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header>
+			<div id="mainHeader">
+				<div id="headerInfo">
+					<div id="headerName">Chris Akridge</div>
+					<div id="headerTitle">Software Developer</div>
+				</div>
+				
+				<div id="headerLinks">
+					<div class="headerLink">
+						<a href="index1.html">Home</a>
+					</div>
+					<div class="headerLink">
+						<a href="projects.html">Projects</a>
+					</div>
+					<div class="headerLink">
+						<a href="/blog/">Blog</a>
+					</div>
+					<div class="headerLink">
+						<a href="contact.html">Contact</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="projectInfoBox">
+			<section id="downloadInfo">
+				<h3>Download {TITLE}</h3>
+				<ul>
+					<li>Latest version: {VERSION} (released {RELEASEDATE})</li>
+					<li>SHA-1: <pre>{SHA-1}</pre></li>
+					<li>Download Type: {FILETYPE}, {FILESIZE}</li>
+				</ul>
+				<div class="downloadLinks">
+					<!-- https://stackoverflow.com/a/2906586/2709212 -->
+					<a href="../downloads/{LINK}" target="_blank" class="button">Download</a>
+					<a href="https://github.com/ChrisAkridge/{GITHUB}" target="_blank" class="button">GitHub</a>
+				</div>
+			</section>
+			
+			<section id="latestChangelog">
+				<h3>Latest Changelog</h3>
+				<h4>{VERSION}</h4>
+				<ul>
+					<li>{DETAILS}</li>
+				</ul>
+			</section>
+			
+			<section id="projectOtherLinks">
+				<h3>Other Links</h3>
+				<ul>
+				</ul>
+			</section>
+		</div>
+		
+		<section id="description">
+			<h2>{MEDIUMDESC}</h2>
+			
+			<p>{TEXT}</p>
+			
+			<img src="../img/scr_{MAINSCR}" class="project-main-screenshot">
+		</section>
+		
+		<section id="screenshots">
+			<div class="screenshotHeader">Screenshots</div>
+			<div class="screenshotContainer">
+				<!-- SCREENSHOTS -->
+			</div>
+		</section>
+		
+		<footer>
+			<div id="mainFooter">
+				<p id="copyrightInfo">&copy; 2017 Chris Akridge. Site source code <a href="https://github.com/ChrisAkridge/Akridgetech/blob/master/LICENSE">licensed</a> under the MIT license.</p>
+				<div id="socialIcons">
+					<a id="github" href="https://www.github.com/ChrisAkridge" target="_blank">
+						<img src="img/gitHub.png">
+					</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

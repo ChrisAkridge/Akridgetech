@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IronArc - Virtual Machine/Custom Processor</title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header>
+			<div id="mainHeader">
+				<div id="headerInfo">
+					<div id="headerName">Chris Akridge</div>
+					<div id="headerTitle">Software Developer</div>
+				</div>
+				
+				<div id="headerLinks">
+					<div class="headerLink">
+						<a href="index1.html">Home</a>
+					</div>
+					<div class="headerLink">
+						<a href="projects.html">Projects</a>
+					</div>
+					<div class="headerLink">
+						<a href="/blog/">Blog</a>
+					</div>
+					<div class="headerLink">
+						<a href="contact.html">Contact</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="projectInfoBox">
+			<section id="downloadInfo">
+				<h3>Download IronArc</h3>
+				<p>IronArc is still in development and no version is currently available for download. However, please check the below links development material.</p>
+				<div class="downloadLinks">
+					<!-- https://stackoverflow.com/a/2906586/2709212 -->
+					<!-- <a href="../downloads/{LINK}" target="_blank" class="button">Download</a> -->
+					<a href="https://github.com/ChrisAkridge/{GITHUB}" target="_blank" class="button">GitHub</a>
+				</div>
+			</section>
+			
+			<section id="projectOtherLinks">
+				<h3>Other Links</h3>
+				<ul>
+					<li><a href="../downloads/ironArcSpec.pdf">Project Specification (PDF)</a></li>
+					<li><a href="https://github.com/ChrisAkridge/IronArc/blob/master/Documentation/Simple%20Instruction%20Listing.txt">Instruction Listing</a></li>
+				</ul>
+			</section>
+		</div>
+		
+		<section id="description">
+			<h2>IronArc</h2>
+			
+			<p>IronArc is a virtual machine running a simple custom instruction set. The IronArc host will run multiple VMs and provide access to the machines using the Debugger. Attach virtual and physical hardware (terminals, I/O, and disk access). This is not meant for production or serious use - it is a learning exercise in low-level programming.</p>
+			
+			<p>IronArc is specified to run as a virtual machine consisting of a processor and block of memory. The processor has eight 64-bit general purpose registers EAX through EHX, stack registers ESP and EBP, relative addressing register ERP, and instruction pointer EIP. Various instructions process data and load/store it to memory.</p>
+			
+			<p>I/O in IronArc is specified to be done through "hardware devices", some of which map to actual hardware, and others that map to devices implemented in software by the host, things like a terminal window or disk access.</p>
+			
+			<p>IronArc programs can be written in raw assembly using the upcoming IronAssembler, or in <a href="cix.html">Cix</a>, an upcoming simple C-like language.</p>
+			
+			<p>The host will support running multiple VMs concurrently, using cross-thread messaging to avoid shared memory problems. A debugger will display a disassembly of memory at the instruction pointer and allow the user to step through the code and modify the values of registers and memory.</p>
+			
+			<img src="../img/scr_IronArc.png" class="project-main-screenshot">
+		</section>
+		
+		<section id="screenshots">
+			<div class="screenshotHeader">Screenshots</div>
+			<div class="screenshotContainer">
+				<a href="../img/scr/ironArc0.png" target="_blank"><img src="../img/scr/ironArc0.png"></a>
+				<a href="../img/scr/ironArc1.png" target="_blank"><img src="../img/scr/ironArc1.png"></a>
+				<a href="../img/scr/ironArc2.png" target="_blank"><img src="../img/scr/ironArc2.png"></a>
+			</div>
+		</section>
+		
+		<footer>
+			<div id="mainFooter">
+				<p id="copyrightInfo">&copy; 2017 Chris Akridge. Site source code <a href="https://github.com/ChrisAkridge/Akridgetech/blob/master/LICENSE">licensed</a> under the MIT license.</p>
+				<div id="socialIcons">
+					<a id="github" href="https://www.github.com/ChrisAkridge" target="_blank">
+						<img src="img/gitHub.png">
+					</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

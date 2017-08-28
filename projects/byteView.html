@@ -64,11 +64,21 @@
 		<section id="description">
 			<h2>View arbitrary files as bitmapped images</h2>
 			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a gravida ante. Nam eleifend mollis felis, nec efficitur dolor molestie at. Mauris at neque risus. In sollicitudin malesuada turpis at mollis. Nunc condimentum nibh nec vehicula volutpat. Quisque mollis lectus est, a mattis elit suscipit et. Nunc massa risus, vehicula ac ex quis, aliquam commodo felis. Suspendisse eleifend erat non magna lobortis, et ultrices ipsum varius. In consequat quam sit amet nisl lobortis, ut ultrices est tempor. Quisque pulvinar dapibus nisl eget imperdiet. Praesent eu risus risus. Nulla et odio sed lectus sodales pellentesque. Phasellus placerat laoreet lorem, in cursus mauris placerat quis. Vestibulum sed neque sit amet tortor sagittis ultrices at non magna. Curabitur consectetur turpis id lacus hendrerit consectetur. Fusce sed egestas turpis.</p>
+			<p>Display any file, group of files, or folder as a bitmap image made from the raw bytes of the file. Save and load pictures, sort them and extract the unique colors. Export a series of images made from a group of files using the Large File Processor.</p>
 
-			<p>Maecenas eget elit vel dui accumsan facilisis ac vitae diam. Nam dictum sodales purus, sed ornare sem mattis non. Duis posuere euismod turpis, nec ornare mauris egestas vel. Mauris a mauris leo. Proin cursus tincidunt suscipit. Curabitur nec laoreet ante. Integer eu aliquet quam. Aliquam ornare, erat ac lacinia faucibus, libero nisi aliquet massa, sit amet imperdiet purus ligula imperdiet nunc. Mauris volutpat nec tortor a cursus.</p>
+			<p>ByteView can display the contents of files in various bit depths (1bpp to 32bpp) and two color modes: grayscale and color, with optional transparency at 16 and 32 bits per pixel. ByteView first loads the bytes of the file and then lays them out from left to right and top to bottom, on a square-ish bitmap.</p>
+			
+			<p>Multiple files can be selected, and they'll be loaded in the order they were displayed in the file dialog. You can also select a folder, which will load all files within that folder and all subfolders. Use caution when selecting very large files or folders with many files.</p>
 
-			<p>Integer vel fermentum tellus, id vehicula diam. Phasellus tempus ornare ante vitae bibendum. Suspendisse erat elit, suscipit nec venenatis at, pretium eget dolor. Vestibulum vitae ante sit amet enim euismod eleifend. Integer elementum non erat a scelerisque. Integer nec ultrices nulla. Morbi quis lorem ac lorem volutpat sodales id ut nibh. Fusce dapibus arcu sed nisi semper, quis fringilla nulla vulputate. Integer consectetur congue sapien ut ultricies. Quisque nec tincidunt urna, in bibendum ex. Vivamus egestas porta ex, in ornare lectus blandit sed. Nam laoreet, leo vel auctor varius, libero enim feugiat odio, eu placerat magna nulla a ante. Nam pellentesque bibendum libero vel gravida. Suspendisse dignissim, ipsum sodales ullamcorper posuere, lacus risus consectetur dui, eget convallis eros nulla sit amet ex.</p>
+			<p>Use the "Open Picture" button to select a standard picture to load, or the "Open Raw" to select a file and load its raw bytes directly into memory, without separating bytes into pixels based on the BPP selected. Additionally, any images that were generated can be saved to disk.</p>
+			
+			<p>The Large File Processor lets you pick a large number of files and turn them into a sequence of bitmaps with a certain width, height, bit depth, and color mode, all saved in a specified folder as PNG images. This is useful for extremely large files, or for folders with many files.</p>
+			
+			<p>The "Sort" button sorts the pixels of the displayed image based on the numeric value of the pixel in question - for example, the ARGB color #FF113377 would be sorted as 4,279,317,367. The "Unique Colors" button removes all pixel with a duplicate color in the image. Both buttons can be used with generated bitmaps and images loaded with the "Open Picture" button.</p>
+			
+			<p>Most files aren't <em>very</em> interesting as bitmaps - they look mostly like colorful noise. Text documents tend to be dark as most bytes tend to be beneath 0x7F, thus leading to dark colors selected. Some interesting padding patterns can be found in some binaries, and BMP image and AVI movies encoded in a certain way can have some of their content made out in the picture.</p>
+			
+			<p><strong>Warning:</strong> This program is not friendly with memory, or, if you're using the Large File Processor, with disk space. With the LFP, all files are copied into a temp.dat file which is used for generating the resulting bitmap. While the temp.dat file is deleted after all the bitmaps are generated, a large amount of disk reads and writes are used, depending on the size of the files in question.</p>
 			
 			<img src="../img/scr_ByteView.png" class="project-main-screenshot">
 		</section>
@@ -76,15 +86,12 @@
 		<section id="screenshots">
 			<div class="screenshotHeader">Screenshots</div>
 			<div class="screenshotContainer">
-				<a href="../img/sample/code.jpg" target="_blank"><img src="../img/sample/code.jpg"></a>
-				<a href="../img/sample/graphs.jpg" target="_blank"><img src="../img/sample/graphs.jpg"></a>
-				<a href="../img/sample/hdd.jpg" target="_blank"><img src="../img/sample/hdd.jpg"></a>
-				<a href="../img/sample/keyboard.jpg" target="_blank"><img src="../img/sample/keyboard.jpg"></a>
-				<a href="../img/sample/map.jpg" target="_blank"><img src="../img/sample/map.jpg"></a>
-				<a href="../img/sample/motherboard.jpg" target="_blank"><img src="../img/sample/motherboard.jpg"></a>
-				<a href="../img/sample/mouse.jpg" target="_blank"><img src="../img/sample/mouse.jpg"></a>
-				<a href="../img/sample/oscilloscope.jpg" target="_blank"><img src="../img/sample/oscilloscope.jpg"></a>
-				<a href="../img/sample/settings.jpg" target="_blank"><img src="../img/sample/settings.jpg"></a>
+				<a href="../img/scr/byteView0.png" target="_blank"><img src="../img/scr/byteView0.png"></a>
+				<a href="../img/scr/byteView1.png" target="_blank"><img src="../img/scr/byteView1.png"></a>
+				<a href="../img/scr/byteView2.png" target="_blank"><img src="../img/scr/byteView2.png"></a>
+				<a href="../img/scr/byteView3.png" target="_blank"><img src="../img/scr/byteView3.png"></a>
+				<a href="../img/scr/byteView4.png" target="_blank"><img src="../img/scr/byteView4.png"></a>
+				<a href="../img/scr/byteView5.png" target="_blank"><img src="../img/scr/byteView5.png"></a>
 			</div>
 		</section>
 		
