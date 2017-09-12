@@ -1,7 +1,7 @@
 /* main.css - Stylesheets for pages on akridgetech.com */
 
 html, body {
-	
+
 }
 
 * {
@@ -13,10 +13,6 @@ pre {
 	display: inline;
 	font-size: 80%;
 	font-family: Consolas, 'Courier New', monospace;
-}
-
-.linkHighContrast {
-	color: #aaaaff;
 }
 
 .linkHighContrast {
@@ -105,7 +101,7 @@ pre {
 /* ==== Section Rules ==== */
 .pageSection {
 	border-top: 2px solid #aaa;
-	margin: 5px 15px 0px 15px;
+	margin: 5px 15px 0 15px;
 }
 
 .sectionHeader {
@@ -405,94 +401,98 @@ a.button {
 /* ==== Global Media Queries ==== */
 @media screen and (min-width: 1024px) {
 	/* Most tablets and computers */
-	
+
 	/* ==== Header Styles ==== */
 	#mainHeader {
 		overflow: auto;
 		display: flex;
 		width: 100%;
 	}
-	
+
 	#headerInfo {
 		width: 70%;
 		padding-left: 30px;
 	}
-	
+
 	#headerName {
 		text-align: left;
 	}
-	
+
 	#headerTitle {
 		text-align: left;
 	}
-	
+
 	#headerLinks {
 		width: 40%;
 		margin: 0;
 		align-items: center;
 	}
-	
+
 	/* ==== About Me Styles ==== */
 	#aboutMeText {
 		font-size: 1.8rem;
 	}
-	
+
+	#aboutMeText p {
+		padding-bottom: 25px;
+	}
+
 	/* ==== Section Styles ==== */
 	.sectionHeader {
 		font-size: 2.25rem;
 	}
-	
+
 	.project-screenshot-right {
 		display: flex;
 		align-items: center;
 	}
-	
+
 	.project-left-description {
 		width: 45%;
 		margin-right: 5%;
 	}
-	
+
 	.project-left-description h3 {
 		font-size: 1.75rem;
 	}
-	
+
 	.project-left-description {
 		font-size: 1.3rem;
 	}
-	
+
 	.project-right-screenshot {
 		width: 50%;
 	}
-	
+
 	.project-screenshot-left {
 		display: flex;
 		align-items: center;
 	}
-	
+
 	.project-right-description {
 		width: 40%;
 		margin-left: 5%;
 	}
-	
+
 	.project-right-description {
 		font-size: 1.3rem;
 	}
-	
+
 	.project-right-description h3 {
 		font-size: 1.75rem;
 	}
-	
+
 	.project-left-screenshot {
 		width: 50%;
 	}
-	
+
 	/* ==== Project Infobox Rules ==== */
 	.projectInfoBox {
 		width: 50%;
 		float: right;
 		margin-bottom: 20px;
 	}
-	
+
 	/* ==== Project Latest Changelog Rules ==== */
 	#latestChangelog {
 		visibility: visible;
@@ -522,12 +522,12 @@ a.button {
 
 @media screen and (max-width: 480px) {
 	/* Really tiny devices */
-	
+
 	/* ==== Header Styles ==== */
 	#headerLinks {
 		width: 85%;
 	}
-	
+
 	/* ==== About Me Styles ==== */
 	#aboutMeText {
 		font-size: 1.025rem;

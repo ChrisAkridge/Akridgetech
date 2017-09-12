@@ -1,0 +1,57 @@
+/*
+Theme Name: Akridgetech
+Theme URI: http://www.akridgetech.com/blog/
+Author: Chris Akridge
+Author URI: http://www.akridgetech.com
+Description: A theme based on the main style of the akridgetech.com pages.
+Version: 1.0
+License: The MIT License
+License URI: https://opensource.org/licenses/MIT
+Tags: black, white, one-column, right-sidebar, sticky-post
+Text Domain: akridgetech
+*/
+
+* {
+	margin: 0;
+	font-family: Calibri, Optima, sans-serif;
+}
+
+body {
+}
+
+#wrapper {
+	display: block;
+	border: 1px #a2a2a2 solid;
+	width:90%;
+	margin:0px auto; 
+}
+
+#header {
+	border: 2px #a2a2a2 solid; 
+}
+
+#content {
+	width: 75%;
+	border: 2px #a2a2a2 solid;
+	float: left; 
+}
+
+#sidebar {
+	width: 23%; 
+	border: 2px #a2a2a2 solid; 
+	float: right; 
+}
+
+#delimiter {
+	clear: both; 
+}
+
+#footer {
+	border: 2px #a2a2a2 solid; 
+}
+
+.title {
+	font-size: 11pt;
+	font-family: verdana; 
+	font-weight: bold; 
+}
