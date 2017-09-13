@@ -367,6 +367,25 @@ a.button {
 	font-size: 125%;
 }
 
+/* ==== Error Page Rules ==== */
+.error-container {
+	margin: 50px;
+	padding: 20px;
+	border: 1px solid red;
+	border-radius: 35px;
+	background-color: #FF7E7E;
+}
+
+.error-header {
+	text-align: center;
+	font-size: 250%;
+}
+
+.error-container p {
+	text-align: center;
+	font-size: 150%;
+}
+
 /* ==== Footer Rules ==== */
 #mainFooter {
 	color: #8f8f8f;

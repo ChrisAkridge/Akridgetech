@@ -12,24 +12,24 @@
 					<div id="headerName">Chris Akridge</div>
 					<div id="headerTitle">Software Developer</div>
 				</div>
-				
+
 				<div id="headerLinks">
 					<div class="headerLink">
-						<a href="index1.html">Home</a>
+						<a href="/index.html">Home</a>
 					</div>
 					<div class="headerLink">
-						<a href="projects.html">Projects</a>
+						<a href="/projects.html">Projects</a>
 					</div>
 					<div class="headerLink">
 						<a href="/blog/">Blog</a>
 					</div>
 					<div class="headerLink">
-						<a href="contact.html">Contact</a>
+						<a href="/contact.html">Contact</a>
 					</div>
 				</div>
 			</div>
 		</header>
-		
+
 		<div class="projectInfoBox">
 			<section id="downloadInfo">
 				<h3>Download ByteView</h3>
@@ -44,7 +44,7 @@
 					<a href="https://github.com/ChrisAkridge/ByteView" target="_blank" class="button">GitHub</a>
 				</div>
 			</section>
-			
+
 			<section id="latestChangelog">
 				<h3>Latest Changelog</h3>
 				<h4>Version 1.0.0</h4>
@@ -52,7 +52,7 @@
 					<li>First release</li>
 				</ul>
 			</section>
-			
+
 			<section id="projectOtherLinks">
 				<h3>Other Links</h3>
 				<ul>
@@ -60,29 +60,29 @@
 				</ul>
 			</section>
 		</div>
-		
+
 		<section id="description">
 			<h2>View arbitrary files as bitmapped images</h2>
-			
+
 			<p>Display any file, group of files, or folder as a bitmap image made from the raw bytes of the file. Save and load pictures, sort them and extract the unique colors. Export a series of images made from a group of files using the Large File Processor.</p>
 
 			<p>ByteView can display the contents of files in various bit depths (1bpp to 32bpp) and two color modes: grayscale and color, with optional transparency at 16 and 32 bits per pixel. ByteView first loads the bytes of the file and then lays them out from left to right and top to bottom, on a square-ish bitmap.</p>
-			
+
 			<p>Multiple files can be selected, and they'll be loaded in the order they were displayed in the file dialog. You can also select a folder, which will load all files within that folder and all subfolders. Use caution when selecting very large files or folders with many files.</p>
 
 			<p>Use the "Open Picture" button to select a standard picture to load, or the "Open Raw" to select a file and load its raw bytes directly into memory, without separating bytes into pixels based on the BPP selected. Additionally, any images that were generated can be saved to disk.</p>
-			
+
 			<p>The Large File Processor lets you pick a large number of files and turn them into a sequence of bitmaps with a certain width, height, bit depth, and color mode, all saved in a specified folder as PNG images. This is useful for extremely large files, or for folders with many files.</p>
-			
+
 			<p>The "Sort" button sorts the pixels of the displayed image based on the numeric value of the pixel in question - for example, the ARGB color #FF113377 would be sorted as 4,279,317,367. The "Unique Colors" button removes all pixel with a duplicate color in the image. Both buttons can be used with generated bitmaps and images loaded with the "Open Picture" button.</p>
-			
+
 			<p>Most files aren't <em>very</em> interesting as bitmaps - they look mostly like colorful noise. Text documents tend to be dark as most bytes tend to be beneath 0x7F, thus leading to dark colors selected. Some interesting padding patterns can be found in some binaries, and BMP image and AVI movies encoded in a certain way can have some of their content made out in the picture.</p>
-			
+
 			<p><strong>Warning:</strong> This program is not friendly with memory, or, if you're using the Large File Processor, with disk space. With the LFP, all files are copied into a temp.dat file which is used for generating the resulting bitmap. While the temp.dat file is deleted after all the bitmaps are generated, a large amount of disk reads and writes are used, depending on the size of the files in question.</p>
-			
+
 			<img src="../img/scr_ByteView.png" class="project-main-screenshot">
 		</section>
-		
+
 		<section id="screenshots">
 			<div class="screenshotHeader">Screenshots</div>
 			<div class="screenshotContainer">
@@ -94,7 +94,7 @@
 				<a href="../img/scr/byteView5.png" target="_blank"><img src="../img/scr/byteView5.png"></a>
 			</div>
 		</section>
-		
+
 		<footer>
 			<div id="mainFooter">
 				<p id="copyrightInfo">&copy; 2017 Chris Akridge. Site source code <a href="https://github.com/ChrisAkridge/Akridgetech/blob/master/LICENSE">licensed</a> under the MIT license.</p>
