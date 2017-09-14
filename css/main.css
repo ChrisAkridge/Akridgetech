@@ -69,7 +69,7 @@ pre {
 }
 
 .headerLink a:visited {
-	color: #4935F4;
+	color: #a196ff;
 }
 
 /* ==== "About Me" Section Rules ==== */
@@ -87,6 +87,10 @@ pre {
 	width: 60%;
 	font-family: Calibri, Optima, sans-serif;
 	font-size: 1.2rem;
+}
+
+#aboutMeText a:visited {
+    color: #ba8ef3;
 }
 
 #aboutMeImage {
