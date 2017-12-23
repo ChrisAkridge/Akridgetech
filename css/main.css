@@ -74,7 +74,7 @@ pre {
 
 /* ==== "About Me" Section Rules ==== */
 #aboutMe {
-	background-color: #090A3B;
+	background-color: black;
 	min-height: 400px;
 	display: flex;
 	align-items: center;
@@ -89,8 +89,12 @@ pre {
 	font-size: 1.2rem;
 }
 
+#aboutMeText a {
+	color: darkgray;
+}
+
 #aboutMeText a:visited {
-    color: #ba8ef3;
+    color: #444444;
 }
 
 #aboutMeImage {
@@ -196,7 +200,6 @@ pre {
 	box-sizing: border-box;
 	height: 100px;
 	text-align: center;
-	background-color: #6da4e5;
 	color: #ffffff;
 	font-size: 250%;
 }
@@ -207,6 +210,9 @@ pre {
 	position: relative;
 	top: 25%;
 	transform: translateY(-50%);
+	background-color: #6da4e5;
+	padding: 20px;
+	border-radius: 20px;
 }
 
 .project-page-link a:hover {
@@ -333,7 +339,6 @@ a.button {
 }
 
 .screenshotContainer img {
-	width: 100%;
 	box-shadow: 4px 4px 10px #222;
 }
 
