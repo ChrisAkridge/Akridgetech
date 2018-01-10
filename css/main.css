@@ -339,6 +339,7 @@ a.button {
 }
 
 .screenshotContainer img {
+	width: 100%;
 	box-shadow: 4px 4px 10px #222;
 }
 
