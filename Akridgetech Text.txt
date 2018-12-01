@@ -1,0 +1,37 @@
+About Me:
+Hi, I'm Chris. I'm a C# developer in Louisville, Kentucky, and I'm interested in all kinds of things. I work on a number of personal projects ranging the gamut, from game engines to compilers to utilities to common libraries.
+
+I'm currently looking for a back-end C# in the Louisville area. If you're interested, please shoot me an e-mail.
+
+Project Short Descriptions:
+
+Limitless Engine:
+A platformer game engine using the MonoGame framework. Built around extensibility, users and developers can design their own levels, add new graphics to existing objects, and even add their own sprites and tiles with entirely new behavior through drop-in sprite assemblies.
+
+ByteView:
+
+Display any file, group of files, or folder as a bitmap image made from the raw bytes of the file. Save and load pictures, sort them and extract the unique colors. Export a series of images made from a group of files using the Large File Processor.
+
+IronArc:
+
+IronArc is a virtual machine running a simple custom instruction set. The IronArc host will run multiple VMs and provide access to the machines using the Debugger. Attach virtual and physical hardware (terminals, I/O, and disk access). This is not meant for production or serious use - it is a learning exercise in low-level programming.
+
+Cix:
+
+Cix (pronounced "six") is a compiler project for a simple C-like language. Its primary use will be to produce programs for the IronArc platform.
+
+IronAssembler:
+
+Assembles and disassembles programs for the IronArc platform.
+
+Supermarket:
+
+A browser-based incremental game. Run a retail store, buy and upgrade departments, hire staff, and rake in the trigintillions of dollars! Improve customer satisfaction, hire VIPs, and promote your way to retail mastery!
+
+ChrisAkridge.Common:
+
+Common utility methods and classes for my projects and for general use. Always in development, with new utilities and tests. Includes Validations, an idea based off of Rick Brewster's Paint.NET code that validates method preconditions in a quick and simple-to-read way.
+
+CurdayToJSON:
+
+A community built around the old Prevue Guide channel found the software used to run the channel and are not only able to run it on Amiga emulators, but can provide their own listings by editing a curday.dat file encoded in a binary-ASCII mix. Editing this file by hand is tedious, so I wrote CurdayToJSON to convert the curday.dat file into JSON form and back for easier guide editing.
