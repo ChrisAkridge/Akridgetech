@@ -1,0 +1,39 @@
+akridgetech.com: Chris Akridge's Website
+Outline
+
+Objective:
+	- To build a website that:
+		- Describes and showcases my skills as a programmer
+		- Displays my personal projects, including downloads for .NET programs
+		- Hosts a WordPress blog with a similar design that I can use to write blog posts about programming and other things that interest me
+		- Hosts any web games or other web services I write, such as Supermarket
+		
+Site Design:
+	- Top navigation bar: Links to all the main pages of the site.
+		- On desktop platforms, it appears as a thin bar at the top of the site with my name at the left side and links to the pages on the right.
+		- On mobile platforms, it appears as a wider bar at the top of the site with my name at the top and links to pages as larger buttons below my name, making them easier to click on mobile.
+	- Bottom bar: Displays copyright, disclaimer, and links to social media accounts.
+	- akridgetech.com/index.html: The home page, which displays some basic "about me" information, including my picture and a paragraph describing me.
+	- akridgetech.com/projects/home.html: A list of my personal projects, displayed as a column of tall single rows.
+		- Desktop: Each project has a title (top-left corner), description paragraph (on left), screenshot (on right), and download page link (bottom right).
+		- Mobile: Project title (top-center), description paragraph (center), screenshot (wherever it fits), download page link (bottom center).
+	- akridgetech.com/projects/*.html: Individual landing page for each project. Contains:
+		- More descriptions and sections describing key features (D: left, M: center, beneath download box).
+		- Download box (D: top-right, M: top-center) that shows latest version, release date, SHA-256 for installer, and download/GitHub links.
+		- Box beneath download box that shows the latest changelog (desktop only).
+		- Beneath the description section is a list of screenshots of the program. Each screenshot can be clicked to display a lightbox-style display of the screenshot.
+		- Beneath the screenshots section is a full changelog for the program (maybe play with how it's laid out - having a big wall of text isn't very useful - maybe a collapsible part?)
+	- akridgetech.com/blog/: A WordPress installation that is styled (as much as possible) to look like the main site. Hosts all kinds of topics, such as general programming, project-specific posts, and posts about basically anything I'm interested in.
+	- akridgetech.com/supermarket/: Host for the Supermarket game.
+	
+CSS Information:
+	- Having multiple CSS pages means that the browser needs to make multiple requests. As much as possible, I'll try to place all the site stylesheets into one file, located at /css/main.css.
+	- The file first defines primary styles and then styles for each subpage.
+
+JS Information:
+	- Explicit JavaScript on most pages outside of the Supermarket game (and any other web apps) isn't expected to be necessary. If it is, it'll be placed into as few JS files as possible in the /js/main.js file.
+		
+Other Links:
+	- https://github.com/mrclay/minify
+	- http://www.lipsum.com/
+	- https://www.worldoweb.co.uk/2012/display-your-wordpress-recent-posts-on-a-static-page
